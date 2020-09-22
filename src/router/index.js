@@ -6,7 +6,7 @@ import Agency from '../views/Agency/Agency.vue'
 // import Connection from '../views/connection/Connection.vue'
 // import Registration from '../views/registration/Registration.vue'
 // import Help from '../views/help/Help.vue'
-// import Contact from '../views/contact/Contact.vue'
+import Contact from '../views/Contact/Contact.vue'
 
 Vue.use(VueRouter)
 
@@ -36,11 +36,11 @@ const routes = [
   //   name: 'Help',
   //   component: Help
   // },
-  // {
-  //   path: '/contact',
-  //   name: 'Contact',
-  //   component: Contact
-  // },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
+  },
 ]
 
 const router = new VueRouter({

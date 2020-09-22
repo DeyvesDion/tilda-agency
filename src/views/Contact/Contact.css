@@ -1,0 +1,104 @@
+.contactWrap {
+    background-color: #7451EB;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding-top: 70px;
+}
+
+.contactWrap .description {
+    background: #c8bcf3;
+    padding-top: 20px;
+    height: 70vh;
+    width: 35%;
+}
+
+.description .title {
+    font-size: 60px;
+    line-height: 68px;
+    font-weight: 700;
+    color: #7451EB;
+}
+
+.description .subTitle {
+    font-size: 35px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #7451EB;
+}
+
+.description .Adress {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 100;
+    color: #7451EB;
+}
+
+.contactWrap .formBox {
+    width: 35%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+
+.formBox form h2 {
+    font-size: 60px;
+    line-height: 68px;
+    font-weight: 700;
+    color: #7451EB;
+    text-align: left;
+}
+
+.formBox form .contactItem {
+    padding: 10px;
+    background-color: rgba(221, 214, 214, 0.205);
+    color: #000;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin: 8px 0;
+    width: 400px;
+}
+
+.formBox form .msg {
+    height: 100px;
+    resize: none;
+}
+
+.formBox form .submit {
+    background-color: #7451EB;
+    color: #fff;
+    font-weight: 600;
+}
+
+.agency .agencyImg {
+    /* background-image: url(../../assets/agence.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 0%;
+    height: 100%;
+}
+
+.agency .title {
+    font-size: 56px;
+    line-height: 68px;
+    font-weight: 700;
+    color: #000;
+}
+
+.agency .subTitle {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #000;
+}
