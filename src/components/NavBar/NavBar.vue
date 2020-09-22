@@ -7,16 +7,13 @@
             <div class="toggle" onclick="toggleMenu()"></div>
             <ul class="menu">
                 <li class="navItem">
-                    <router-link
-                        to="/enregister-un-bateau"
-                        class="navLink"
-                        onclick="toggleMenu()"
+                    <router-link to="/" class="navLink" onclick="toggleMenu()"
                         >Accueil</router-link
                     >
                 </li>
                 <li class="navItem">
                     <router-link
-                        to="/connexion"
+                        to="/agence-web"
                         class="navLink"
                         onclick="toggleMenu()"
                         >Agence</router-link

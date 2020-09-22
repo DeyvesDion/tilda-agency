@@ -1,0 +1,111 @@
+.agency {
+    /* margin-top: 110px; */
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+.agency .description {
+    background: #ded9f1;
+    padding-top: 140px;
+    width: 50%;
+}
+
+.agency .imgBox {
+    width: 50%;
+}
+
+.agency .agencyImg {
+    /* background-image: url(../../assets/agence.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 0%;
+    height: 100%;
+}
+
+.agency .title {
+    font-size: 56px;
+    line-height: 68px;
+    font-weight: 700;
+    color: #000;
+}
+
+.agency .subTitle {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #000;
+}
+
+/* Counter */
+.productionCounter {
+    height: 300px;
+    cursor: pointer;
+    width: 90%;
+}
+
+.counter {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.counter .title,
+span {
+    font-size: 50px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #7451EB;
+}
+
+.counter .description {
+    font-size: 18px;
+}
+
+.agency2 {
+    /* margin-top: 110px; */
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+.agency2 .description {
+    background: #ded9f1;
+    padding-top: 110px;
+    width: 50%;
+}
+
+.agency2 .imgBox {
+    width: 50%;
+}
+
+.agency2 .agencyImg {
+    /* background-image: url(../../assets/agence.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 0%;
+    height: 100%;
+}
+
+.agency2 .title {
+    font-size: 56px;
+    line-height: 68px;
+    font-weight: 700;
+    color: #000;
+}
+
+.agency2 .subTitle {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #000;
+}

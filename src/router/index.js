@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home/Home.vue'
-// import Search from '../views/search/Search.vue'
+import Agency from '../views/Agency/Agency.vue'
 // import RegisterBoat from '../views/registerBoat/RegisterBoat.vue'
 // import Connection from '../views/connection/Connection.vue'
 // import Registration from '../views/registration/Registration.vue'
@@ -16,11 +16,11 @@ const routes = [
     name: 'Home',
     component: Home
   },
-  // {
-  //   path: '/enregister-un-bateau',
-  //   name: 'RegisterBoat',
-  //   component: RegisterBoat
-  // },
+  {
+    path: '/agence-web',
+    name: 'Agency',
+    component: Agency
+  },
   // {
   //   path: '/connexion',
   //   name: 'Connection',
