@@ -1,17 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <!-- Bootstrap -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+        <link rel="icon" href="<%= BASE_URL %>logo.png" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+            integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Tilda Agency | Agence web à Paris</title>
+    </head>
+    <body>
+        <noscript>
+            <strong
+                >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't
+                work properly without JavaScript enabled. Please enable it to
+                continue.</strong
+            >
+        </noscript>
+        <div id="app"></div>
+        <!-- built files will be auto injected -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="./Banner/daisy.js"></script>
+        <script>
+            // Start NavBar js script
+            window.addEventListener("scroll", function() {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            });
+            function toggleMenu() {
+                var menuToggle = document.querySelector(".toggle");
+                var menu = document.querySelector(".menu");
+                menuToggle.classList.toggle("active");
+                menu.classList.toggle("active");
+            }
+            // End NavBar js script
+
+            // Particle in banner js script
+            document.addEventListener("DOMContentLoaded", function() {
+                daisyjs(
+                    document.getElementById("banner"),
+                    {
+                        dotColor: " #7451EB",
+                        lineColor: " #7451EB",
+                    },
+                    false
+                );
+            });
+            // Start Counter script: you can see on production vue
+
+            document.addEventListener("DOMContentLoaded", function() {
+                $(".num").counterUp({ dalay: 10, time: 1000 });
+            });
+            //End Counter script
+        </script>
+    </body>
 </html>

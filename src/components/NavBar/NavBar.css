@@ -1,0 +1,148 @@
+/* Go to publique/index.html to see NavBar js script */
+
+
+ol,
+ul,
+dl {
+    margin-bottom: 0 !important;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 0 100px;
+    z-index: 1000;
+    display: flex !important;
+    background: #fff;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1.5s;
+}
+
+header .logoSection {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 22px;
+}
+
+/* header .logo:hover {
+    text-decoration: none;
+    color: #7451EB;
+} */
+
+header .logoIcon {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    color: #000;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+header ul li a:hover {
+    color: #7451EB;
+}
+
+header.sticky {
+    background-color: #fff;
+    box-shadow: 0 5px 20px #7451EB;
+}
+
+header.sticky .logo {
+    color: #000;
+}
+
+header.sticky ul li a {
+    color: #000;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    header {
+        padding: 10px;
+    }
+
+    header.sticky {
+        z-index: 1000;
+    }
+
+    header ul li a {
+        font-size: 15px;
+        margin: 5px;
+    }
+
+    header.sticky ul li a {
+        color: #000;
+        margin: 5px;
+    }
+
+    .menu {
+        position: fixed;
+        top: 60px;
+        left: 100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 1.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background-image: url(./menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle.active {
+        background-image: url(./close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 23px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,34 @@
+.banner {
+    height: 100vh;
+    background-image: url(../../assets/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.3;
+
+}
+
+.titleWrapper {
+    position: absolute;
+    top: 50%;
+}
+
+.titleWrapper .title {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.titleWrapper .subTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
