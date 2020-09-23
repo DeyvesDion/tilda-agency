@@ -77,6 +77,13 @@
                     </ul>
                 </div>
             </div>
+            <small class="">
+                <ul class="copyright text-center">
+                    <a href="https://deyvesdion.fr"
+                        >&#9400; De Yves DION - Développé avec VueJs par 💖</a
+                    >
+                </ul>
+            </small>
         </footer>
     </div>
 </template>

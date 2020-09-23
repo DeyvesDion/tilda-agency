@@ -2,8 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home/Home.vue'
 import Agency from '../views/Agency/Agency.vue'
-// import RegisterBoat from '../views/registerBoat/RegisterBoat.vue'
-// import Connection from '../views/connection/Connection.vue'
+import Prestation from '../views/Prestation/Prestation.vue'
+import Reference from '../views/Reference/Reference.vue'
 // import Registration from '../views/registration/Registration.vue'
 // import Help from '../views/help/Help.vue'
 import Contact from '../views/Contact/Contact.vue'
@@ -21,16 +21,16 @@ const routes = [
     name: 'Agency',
     component: Agency
   },
-  // {
-  //   path: '/connexion',
-  //   name: 'Connection',
-  //   component: Connection
-  // },
-  // {
-  //   path: '/inscription',
-  //   name: 'Registration',
-  //   component: Registration
-  // },
+  {
+    path: '/prestation',
+    name: 'Prestation',
+    component: Prestation
+  },
+  {
+    path: '/reference',
+    name: 'Reference',
+    component: Reference
+  },
   // {
   //   path: '/aide',
   //   name: 'Help',

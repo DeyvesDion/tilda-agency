@@ -21,7 +21,7 @@
                 </li>
                 <li class="navItem">
                     <router-link
-                        to="/inscription"
+                        to="/prestation"
                         class="navLink"
                         onclick="toggleMenu()"
                         >Prestations</router-link
@@ -29,7 +29,7 @@
                 </li>
                 <li class="navItem">
                     <router-link
-                        to="/aide"
+                        to="/reference"
                         class="navLink"
                         onclick="toggleMenu()"
                         >Références</router-link

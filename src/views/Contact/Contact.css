@@ -39,7 +39,7 @@
 
 .contactWrap .formBox {
     width: 35%;
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     text-align: center;
@@ -53,6 +53,7 @@
     line-height: 68px;
     font-weight: 700;
     color: #7451EB;
+    margin-left: 15px;
     text-align: left;
 }
 
@@ -78,27 +79,58 @@
     font-weight: 600;
 }
 
-.agency .agencyImg {
-    /* background-image: url(../../assets/agence.jpg); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
-    padding: 0%;
-    height: 100%;
+.notifSucces {
+    width: 175px;
+    height: 70px;
+    /* border: solid 1px red; */
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    right: 5px;
+    top: 122px;
+
 }
 
-.agency .title {
-    font-size: 56px;
-    line-height: 68px;
-    font-weight: 700;
-    color: #000;
+.notifError {
+    width: 175px;
+    height: 70px;
+    /* border: solid 1px red; */
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    right: 3px;
+    top: 200px;
 }
 
-.agency .subTitle {
-    font-size: 20px;
-    line-height: 32px;
+.msgNotif {
+    font-size: 15px;
+    line-height: 23px;
     font-weight: 500;
-    color: #000;
+}
+
+.errorNotif {
+    width: 400px;
+    text-align: left;
+    color: #7451EB;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: 2s cubic-bezier(.23, .66, .08, .93);
+    transform: translateX(0px);
+}
+
+.fade-enter,
+.fade-leave-to
+
+/* .fade-leave-active below version 2.1.8 */
+    {
+    opacity: 0;
+    transform: translateY(-210px);
 }

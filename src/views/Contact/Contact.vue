@@ -9,34 +9,49 @@
                 </p>
             </div>
             <div class="formBox shadow-lg">
-                <form>
+                <form @submit.prevent="submit">
                     <h2>Contact</h2>
+                    <transition name="fade">
+                        <div
+                            v-if="notifSucces === true"
+                            class="notifSucces shadow-lg"
+                        >
+                            <h3 class="msgNotif">
+                                Message envoyé !
+                            </h3>
+                        </div>
+                    </transition>
+                    <transition name="fade">
+                        <div
+                            v-if="notifError === true"
+                            class="notifError shadow-lg"
+                        >
+                            <h3 class="msgNotif">
+                                Renseigné tous les champs !
+                            </h3>
+                        </div>
+                    </transition>
+
                     <input
-                        v-model.trim="form.name"
+                        v-model.trim="name"
                         class="contactItem"
                         type="text"
                         placeholder="Votre Nom et Prénom"
-                    /><br />
-                    <!-- <input
-                        class="contactItem"
-                        type="text"
-                        placeholder="Votre Prenom"
-                    /><br /> -->
+                    />
                     <input
-                        v-model.trim="form.email"
+                        v-model.trim="email"
                         class="contactItem"
-                        type="passwors"
+                        type="email"
                         placeholder="Votre adresse mail"
-                    /><br />
+                    />
                     <textarea
-                        v-model.trim="form.msg"
+                        v-model.trim="msg"
                         class="contactItem msg"
                         placeholder="votre message"
                     ></textarea>
-                    <br />
                     <input
                         class="contactItem submit"
-                        type="button"
+                        type="submit"
                         value="Envoyer"
                     />
                 </form>
@@ -50,12 +65,28 @@ export default {
     name: "Contact",
     data() {
         return {
-            form: {
-                name: "",
-                email: "",
-                msg: "",
-            },
+            name: null,
+            email: null,
+            msg: null,
+            notifSucces: false,
+            notifError: false,
         };
+    },
+    methods: {
+        submit() {
+            if (this.name && this.email && this.msg) {
+                this.notifSucces = true;
+                setTimeout(() => {
+                    this.notifSucces = false;
+                }, 5000);
+            } else {
+                this.notifError = true;
+                setTimeout(() => {
+                    this.notifError = false;
+                }, 3000);
+            }
+            (this.name = null), (this.email = null), (this.msg = null);
+        },
     },
 };
 </script>

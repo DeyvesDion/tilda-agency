@@ -131,7 +131,7 @@ header.sticky ul li a {
     .toggle {
         width: 40px;
         height: 40px;
-        background-image: url(./menu.png);
+        background-image: url(../../assets/menu.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 30px;
@@ -139,7 +139,7 @@ header.sticky ul li a {
     }
 
     .toggle.active {
-        background-image: url(./close.png);
+        background-image: url(../../assets/close.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 23px;

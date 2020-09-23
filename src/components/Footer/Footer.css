@@ -34,3 +34,11 @@ footer a:hover {
 footer .appDownload:hover {
     transform: scale(1.3);
 }
+
+.copyright {
+    margin-bottom: 0px !important;
+}
+
+.copyright :hover {
+    text-decoration: none;
+}
